@@ -23,11 +23,11 @@ test.after(() => {
 
 test('should parse ps output on Darwin', async t => {
   const stdout =
-    'PPID   PID\n' +
-    '   1   430\n' +
-    ' 430   432\n' +
-    '   1   727\n' +
-    '   1  7166\n';
+    'PPID  ,  PID\n' +
+    '   1  ,  430\n' +
+    ' 430  ,  432\n' +
+    '   1  ,  727\n' +
+    '   1  , 7166\n';
 
   mockery.registerMock('child_process', {
     spawn: () => mocks.spawn(stdout, '', null, 0, null),
@@ -50,11 +50,11 @@ test('should parse ps output on Darwin', async t => {
 
 test('should parse ps output on *nix', async t => {
   const stdout =
-    'PPID   PID\n' +
-    '   1   430\n' +
-    ' 430   432\n' +
-    '   1   727\n' +
-    '   1  7166\n';
+    'PPID  ,  PID\n' +
+    '   1  ,  430\n' +
+    ' 430  ,  432\n' +
+    '   1  ,  727\n' +
+    '   1  , 7166\n';
 
   mockery.registerMock('child_process', {
     spawn: () => mocks.spawn(stdout, '', null, 0, null),
@@ -77,11 +77,11 @@ test('should parse ps output on *nix', async t => {
 
 test('should throw if stderr contains an error', async t => {
   const stdout =
-    'PPID   PID\n' +
-    '   1   430\n' +
-    ' 430   432\n' +
-    '   1   727\n' +
-    '   1  7166\n';
+    'PPID  ,  PID\n' +
+    '   1  ,  430\n' +
+    ' 430  ,  432\n' +
+    '   1  ,  727\n' +
+    '   1  , 7166\n';
 
   mockery.registerMock('child_process', {
     spawn: () => mocks.spawn(stdout, 'Some error', null, 0, null),
@@ -104,10 +104,10 @@ test('should throw if stderr contains an error', async t => {
 test('should not throw if stderr contains the "bogus screen" error message', async t => {
   const stdout =
     'PPID   PID\n' +
-    '   1   430\n' +
-    ' 430   432\n' +
-    '   1   727\n' +
-    '   1  7166\n';
+    '   1  , 430\n' +
+    ' 430  , 432\n' +
+    '   1  , 727\n' +
+    '   1  ,7166\n';
 
   mockery.registerMock('child_process', {
     spawn: () =>

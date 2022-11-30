@@ -23,10 +23,11 @@ test.after(() => {
 
 test('should parse wmic output on Windows', async t => {
   const stdout =
-    `ParentProcessId  ProcessId\r\r\n` +
-    `0                777      \r\r\n` +
-    `777              778      \r\r\n` +
-    `0                779      \r\r\n\r\r\n`;
+    `\r\r\n` +
+    `node,ParentProcessId,ProcessId\r\r\n` +
+    `test,test,0,777\r\r\n` +
+    `test,test,777,778\r\r\n` +
+    `test,test,0,779\r\r\n\r\r\n`;
 
   mockery.registerMock('child_process', {
     spawn: () => mocks.spawn(stdout, '', null, 0, null),

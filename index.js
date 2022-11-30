@@ -1,4 +1,5 @@
 'use strict';
+const util = require('util');
 
 function pify(fn, arg1, arg2) {
   return new Promise(function(resolve, reject) {
@@ -46,4 +47,6 @@ function list(pid, options, callback) {
   return pify(pidtree, pid, options);
 }
 
+
 module.exports = list;
+module.exports.Watcher = require('./lib/watcher');
