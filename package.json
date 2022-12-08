@@ -1,15 +1,15 @@
 {
-  "name": "pidtree",
-  "version": "0.6.0",
-  "description": "Cross platform children list of a PID",
+  "name": "pidtree-more",
+  "version": "0.1.0",
+  "description": "Cross platform children list of a PID based on the work of <a href=\"https://github.com/simonepri\">Simone Primarosa</a>",
   "license": "MIT",
-  "homepage": "http://github.com/simonepri/pidtree#readme",
+  "homepage": "http://github.com/a2msystemes/pidtree-more#readme",
   "repository": "github:simonepri/pidtree",
   "bugs": {
-    "url": "https://github.com/simonepri/pidtree/issues",
-    "email": "simonepri@outlook.com"
+    "url": "https://github.com/pidtree-more/issues",
+    "email": "a-m.maurin@a2msystemes.fr"
   },
-  "author": "Simone Primarosa <simonepri@outlook.com> (https://github.com/simonepri)",
+  "author": "Ange-Marie MAURIN <a-m.maurin@a2msystemes.fr> (https://github.com/a2msystemes)",
   "contributors": [
     "Simone Primarosa <simonepri@outlook.com> (https://github.com/simonepri)"
   ],
@@ -20,6 +20,7 @@
     "ppid",
     "pid",
     "pidtree",
+    "pidtree-more",
     "pgrep",
     "list",
     "all",
@@ -48,7 +49,7 @@
     "lint": "xo",
     "test": "nyc ava -m \"!*benchmark*\"",
     "test:windows": "ava -m \"!*benchmark*\"",
-    "types": "tsd",
+    "types": "npx tsd",
     "bench": "ava -m \"*benchmark*\""
   },
   "devDependencies": {
@@ -56,6 +57,7 @@
     "mockery": "^2.1.0",
     "np": "^2.20.1",
     "npm-check": "^5.9.2",
+    "npx": "^10.2.2",
     "nyc": "^11.6.0",
     "pify": "^3.0.0",
     "string-to-stream": "^1.1.0",

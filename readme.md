@@ -1,5 +1,5 @@
 <h1 align="center">
-  <b>pidtree</b>
+  <b>pidtree-more</b>
 </h1>
 <p align="center">
   <!-- Version - npm -->
@@ -15,62 +15,13 @@
     <img src="https://img.shields.io/github/license/a2msystemes/pidtree-more.svg" alt="Project license" />
   </a>
 
-  <!-- <br/> -->
-
-  <!-- Lint -->
-  <!-- <a href="https://github.com/a2msystemes/pidtree-more/actions?query=workflow:lint+branch:master"> -->
-  <!-- <img src="https://github.com/a2msystemes/pidtree-more/workflows/lint/badge.svg?branch=master" alt="Lint status" /> -->
-  <!-- </a> -->
-  <!-- Test - macOS -->
-  <!-- <a href="https://github.com/simonepri/pidtree/actions?query=workflow:test-macos+branch:master"> -->
-  <!-- <img src="https://github.com/simonepri/pidtree/workflows/test-macos/badge.svg?branch=master" alt="Test macOS status" /> -->
-  <!-- </a> -->
-  <!-- Test - Ubuntu -->
-  <!-- <a href="https://github.com/simonepri/pidtree/actions?query=workflow:test-ubuntu+branch:master"> -->
-  <!-- <img src="https://github.com/simonepri/pidtree/workflows/test-ubuntu/badge.svg?branch=master" alt="Test Ubuntu status" /> -->
-  <!-- </a> -->
-  <!-- Test - Windows -->
-  <!-- <a href="https://github.com/simonepri/pidtree/actions?query=workflow:test-windows+branch:master"> -->
-  <!-- <img src="https://github.com/simonepri/pidtree/workflows/test-windows/badge.svg?branch=master" alt="Test Windows status" /> -->
-  <!-- </a> -->
-  <!-- Coverage - Codecov -->
-  <!-- <a href="https://codecov.io/gh/simonepri/pidtree"> -->
-  <!-- <img src="https://img.shields.io/codecov/c/github/simonepri/pidtree/master.svg" alt="Codecov Coverage report" /> -->
-  <!-- </a> -->
-  <!-- DM - Snyk -->
-  <!-- <a href="https://snyk.io/test/github/simonepri/pidtree?targetFile=package.json"> -->
-  <!-- <img src="https://snyk.io/test/github/simonepri/pidtree/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" /> -->
-  <!-- </a> -->
-
-  <!-- <br/> -->
-
-  <!-- Code Style - XO-Prettier -->
-  <!-- <a href="https://github.com/xojs/xo"> -->
-  <!-- <img src="https://img.shields.io/badge/code_style-XO+Prettier-5ed9c7.svg" alt="XO Code Style used" /> -->
-  <!-- </a> -->
-  <!-- Test Runner - AVA -->
-  <!-- <a href="https://github.com/avajs/ava"> -->
-  <!-- <img src="https://img.shields.io/badge/test_runner-AVA-fb3170.svg" alt="AVA Test Runner used" /> -->
-  <!-- </a> -->
-  <!-- Test Coverage - Istanbul -->
-  <!-- <a href="https://github.com/istanbuljs/nyc"> -->
-  <!-- <img src="https://img.shields.io/badge/test_coverage-NYC-fec606.svg" alt="Istanbul Test Coverage used" /> -->
-  <!-- </a> -->
-  <!-- Init - ni -->
-  <!-- <a href="https://github.com/simonepri/ni"> -->
-  <!-- <img src="https://img.shields.io/badge/initialized_with-ni-e74c3c.svg" alt="NI Scaffolding System used" /> -->
-  <!-- </a> -->
-  <!-- Release - np -->
-  <!-- <a href="https://github.com/sindresorhus/np"> -->
-  <!-- <img src="https://img.shields.io/badge/released_with-np-6c8784.svg" alt="NP Release System used" /> -->
-  <!-- </a> -->
 </p>
 
 
 ## Synopsis
 
 This fork just that add to [pidtree](https://github.com/simonepri/pidtree) the opportunity to have the name of the process and to search with the process name, especially on Windows (not tested on other platforms).
-It implements a watcher too.
+It's a base module that help me implements [pidtree-watcher](https://github.com/a2msystemes/pidtree-watcher) ([on npmjs](https://www.npmjs.com/package/pidtree-watcher))
 
 ## Usage
 
@@ -135,6 +86,7 @@ console.log(pids);
 
 ## Authors
 
+- original author [Simone Primarosa ](https://github.com/simonepri)
 - [Ange-Marie MAURIN](https://github.com/a2msystemes/)
 
 See also the list of [contributors][contributors] who participated in this project.

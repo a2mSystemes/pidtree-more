@@ -49,4 +49,4 @@ function list(pid, options, callback) {
 
 
 module.exports = list;
-module.exports.Watcher = require('./lib/watcher');
+
